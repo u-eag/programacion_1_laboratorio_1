@@ -1,0 +1,56 @@
+***** Clase 1 - prog1 *****
+
+Tipos de datos y máscaras:
+int: %i / %d
+float: %f / con 2 decimales: %2f
+char: %c
+
+int x=10;
+printf("%d",x);
+
+int numero; //al número lo ingresa el usuario
+scanf("%d",&numero);
+
+
+***** Clase 2 - lab1 *****
+
+-ejercicio: mostrar números del 1 al 10 con while
+
+    int i;
+
+    i=0;
+
+    while(i<10){
+        printf("%d\n",(i+1));
+        i++;
+    }
+
+    return 0;
+
+-ejercicio: mostrar números del 1 al 10 con do while
+
+    int i;
+
+    i=0;
+
+    do{
+        i++;
+        printf("%d\n",i);
+    }while(i<10);
+
+    return 0;
+
+-ejercicio: mostrar números del 1 al 10 con for
+
+    int i;
+    for (i=0; i<10; i++){
+        printf("%d\n",(i+1));
+    }
+
+    return 0;
+
+
+
+
+
+
