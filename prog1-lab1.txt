@@ -2,7 +2,7 @@
 
 Tipos de datos y máscaras:
 int: %i / %d
-float: %f / con 2 decimales: %2f
+float: %f / con 2 decimales: %.2f
 char: %c
 
 int x=10;
@@ -103,7 +103,40 @@ hacerlo con int y con char del 0 al 9
 
     return 0;
 
+-ejemplo de maximo y minimo:
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+//ctype toupper/tolower
+int main()
+{
+    int valor, min, max, flag=0;
+    char rta;
+
+    do{
+        printf("Ingrese un valor: ");
+        scanf("%d",&valor);
+
+        if(flag==0||valor>max){
+            max=valor;
+        }
+        if(flag==0||valor<min){
+            min=valor;
+            flag=1;
+        }
+        do{
+            printf("Continuar[S/N]: ");
+            fflush(stdin);
+            scanf("%c",&rta);
+            rta=toupper(rta);
+        }while(!(rta=='S'||rta=='N'));
+    }while(rta=='S');
+
+    printf("El maximo es: %d \nEl minimo es %d",max,min);
+
+    return 0;
+}
 
 
 
