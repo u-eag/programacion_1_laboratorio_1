@@ -1,6 +1,6 @@
 ***** Clase 1 - prog1 *****
 
-Tipos de datos y máscaras:
+Tipos de datos y mÃ¡scaras:
 int: %i / %d
 float: %f / con 2 decimales: %2f
 char: %c
@@ -8,13 +8,13 @@ char: %c
 int x=10;
 printf("%d",x);
 
-int numero; //al número lo ingresa el usuario
+int numero; //al nÃºmero lo ingresa el usuario
 scanf("%d",&numero);
 
 
 ***** Clase 2 - lab1 *****
 
--ejercicio: mostrar números del 1 al 10 con while
+-ejercicio: mostrar nÃºmeros del 1 al 10 con while
 
     int i;
 
@@ -27,7 +27,7 @@ scanf("%d",&numero);
 
     return 0;
 
--ejercicio: mostrar números del 1 al 10 con do while
+-ejercicio: mostrar nÃºmeros del 1 al 10 con do while
 
     int i;
 
@@ -40,11 +40,65 @@ scanf("%d",&numero);
 
     return 0;
 
--ejercicio: mostrar números del 1 al 10 con for
+-ejercicio: mostrar nÃºmeros del 1 al 10 con for
 
     int i;
     for (i=0; i<10; i++){
         printf("%d\n",(i+1));
+    }
+
+    return 0;
+    
+-ejercicio: hacer un switch que de 0 a 6 diga "a dormir", de 7 a 9 "buenos dÃ­as" y de 10 a 23 otra cosa
+hacerlo con int y con char del 0 al 9
+
+    int hora;
+    char horaChar;
+
+    printf("Ingrese una hora de 0 a 24: ");
+    scanf("%d",&hora);
+
+    switch(hora){
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            printf("A dormir\n");
+            break;
+        case 7:
+        case 8:
+        case 9:
+            printf("Buenos dias\n");
+            break;
+        default:
+            printf("De 10 a 23\n");
+
+    }
+
+    printf("Ingrese una hora de 0 a 9: ");
+    // antes de que el usuario ingrese el char, hay que iniciar el buffer
+    fflush(stdin); //esta funciÃ²n limpia el buffer en microsoft, en linux es: setbuf(NULL,stdin)
+    scanf("%c",&horaChar);
+
+    switch(horaChar){
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+            printf("A dormir\n");
+            break;
+        case '7':
+        case '8':
+            printf("Buenos dias\n");
+            break;
+        default:
+            printf("el 9 es default\n");
     }
 
     return 0;
