@@ -179,3 +179,6 @@ int obtenerMaximo (int x, int y, int z)
     return maximo;
 }
 
+Para generar una librería de funciones: crear un archivo .c (donde va a estar el desarrollo de las funciones) y otro.h (donde van a estar los prototipos de las funciones).
+
+Para cargar una librería en un proyecto de codeblocks: agregar los archivos .c y .h en la carpeta del proyecto, después desde el árbol de codebloks hacer click derecho en el nombre del proyecto / add files / agregar el .c y el .h
