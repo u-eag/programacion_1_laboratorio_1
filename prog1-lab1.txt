@@ -175,5 +175,7 @@ int obtenerMaximo (int x, int y, int z)
     } else {
         maximo = z;
     }
+    
+    return maximo;
 }
 
