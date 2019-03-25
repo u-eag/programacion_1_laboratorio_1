@@ -138,6 +138,42 @@ int main()
     return 0;
 }
 
+***** Clase 3 - prog1 *****
 
+Para crear funciones existen 4 prototipos:
 
+1: Retorno nombreFuncion (Recibe)
+2: No Retorno nombreFuncion (Recibe)
+3: Retorno nombreFuncion (No Recibe)
+4: No Retorno nombreFuncion (No Recibe)
+
+Las variables en el prototipo de la función se llaman "formales" y en el main se llaman "actuales".
+
+- Ejercicio: crear una función que obtenga el máximo entre 3 números
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int obtenerMaximo (int x, int y, int z);
+
+int main()
+{
+    printf("%d\n\n",obtenerMaximo(1,2,3));
+    return 0;
+}
+
+int obtenerMaximo (int x, int y, int z)
+{
+    int maximo;
+
+    if (x>y){
+        if (x>z){
+            maximo = x;
+        }
+    } else if (y>z){
+        maximo = y;
+    } else {
+        maximo = z;
+    }
+}
 
