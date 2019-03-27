@@ -5,6 +5,14 @@ int suma (x,y);
 int resta (x,y);
 float division (x,y);
 int multiplicacion (x,y);
+
+/** \brief Esta función calcula el factorial de un número x (x!).
+ *
+ * \param Se ingresa un número entero.
+ * \param Devuelve un número entero >=-1 y distinto de cero.
+ * \return Devuelve el resultado del factorial si x>=0, de lo contrario devuelve -1 para indicar error.
+ *
+ */   
 int factorial (x);
 
 .c
