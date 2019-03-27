@@ -216,6 +216,8 @@ printf("x: %d y: %d\n", *x, y);
 
 - Función recursiva: cuando desde la función se llama a la función.
 
-- Reportar github: https://github.com/u-eag/-tp_laboratorio_1.git
+- Reportar github: https://github.com/u-eag/tp_laboratorio_1.git
+
+
 
 
