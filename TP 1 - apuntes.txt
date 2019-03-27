@@ -12,10 +12,17 @@ int factorial (x);
 
 int factorial (x)
 {
+int result;
 int acumuladorFactorial=1;
 int i;
-for(i=x;i>1;i--){
-    acumuladorFactorial=acumuladorFactorial*i;
-}
-return acumuladorFactorial;
+    if(x>=0){
+        for(i=x;i>1;i--){
+            acumuladorFactorial=acumuladorFactorial*i;
+        }
+        result=acumuladorFactorial;
+    } else {
+        result=-1;
+        // el factorial de un negativo no existe
+    }
+return result;
 }
