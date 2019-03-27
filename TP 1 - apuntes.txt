@@ -1,0 +1,5 @@
+int suma (x,y);
+int resta (x,y);
+float division (x,y);
+int multiplicacion (x,y);
+int factorial (x);
