@@ -11,6 +11,7 @@ printf("%d",x);
 int numero; //al número lo ingresa el usuario
 scanf("%d",&numero);
 
+Para castear un entero a flotante: (float)x
 
 ***** Clase 2 - lab1 *****
 
