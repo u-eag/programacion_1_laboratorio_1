@@ -253,4 +253,28 @@ return (resp);
 "puntero" solo: guarda la dirección de memoria de la variable que quiero (x).
 "*puntero": cambia el valor de la variable que tengo en la agenda de memoria (x cambia de 5 a 23).
 
+- Ejercicio: pedir 5 numeros, mostrar la suma y el promedio (con array)
+
+    int cantidad=5;
+    int vec[cantidad];
+    int acumuladorSuma=0;
+    float promedio;
+
+    for(int i=0; i<cantidad; i++){
+        printf("Ingrese un número: ");
+        scanf("%d", &vec[i]);
+        acumuladorSuma+=vec[i];
+    }
+
+    for(int i=0; i<cantidad; i++){
+        acumuladorSuma+=vec[i];
+    }
+
+    promedio = (float)acumuladorSuma / cantidad;
+
+    printf("\nLa suma de los numeros ingresados es: %d y el promedio es: %.2f\n", acumuladorSuma, promedio);
+    
+ TIP: para que CodeBlocks compile con la variable i declarada adentro de la condición del for: 
+ ir a Settings/Compiler/ y tildar la 4ta opción "Have gcc follow the  1999 ISO  language standard [-std=c99]"
+ y a partir de eso ya anda el for(int i=0; i<cantidad; i++){
 
