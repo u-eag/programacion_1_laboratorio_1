@@ -238,7 +238,18 @@ resp=n* factorial(n-1);
 return (resp);
 }
 
+***** Clase 5 - prog1 *****
 
+- Un puntero es una variable que guarda una dirección de memoria de otra variable. Puede ser int*, char* o float*.
 
+    int x = 5;
+    int* puntero;
+    
+    puntero = &x:
+    
+    *puntero = 23;
+   
+"puntero" solo: guarda la dirección de memoria de la variable que quiero (x).
+"*puntero": cambia el valor de la variable que tengo en la agenda de memoria (x cambia de 5 a 23).
 
 
