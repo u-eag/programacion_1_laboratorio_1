@@ -246,7 +246,7 @@ return (resp);
     int x = 5;
     int* puntero;
     
-    puntero = &x:
+    puntero = &x;
     
     *puntero = 23;
    
