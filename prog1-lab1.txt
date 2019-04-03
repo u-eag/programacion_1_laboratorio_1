@@ -277,4 +277,11 @@ return (resp);
  TIP: para que CodeBlocks compile con la variable i declarada adentro de la condición del for: 
  ir a Settings/Compiler/ y tildar la 4ta opción "Have gcc follow the  1999 ISO  language standard [-std=c99]"
  y a partir de eso ya anda el for(int i=0; i<cantidad; i++){
+ 
+ ***** Clase 6 - lab1 *****
+ 
+ - leer apunte del campus: clase 4 / input
+ 
+ 
+
 
