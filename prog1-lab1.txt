@@ -315,6 +315,18 @@ int main()
 char cadena[50];
 fflush(stdin);
 scanf("%s", cadena); // corta al ingresar un espacio
- 
+
+    char buffer[64];
+    int cantidad;
+
+    printf("Nombre: ");
+    //fgets(buffer, 62, stdin);
+    fgets(buffer,sizeof(buffer)-2,stdin);
+
+    cantidad = strlen(buffer);
+
+    buffer[cantidad-1] = '\0';
+
+    printf("%s", buffer);
 
 
