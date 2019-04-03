@@ -329,4 +329,9 @@ scanf("%s", cadena); // corta al ingresar un espacio
 
     printf("%s", buffer);
 
+- para comparar cadenas, como no son datos nativos del lenguaje, hay que usar la función strcmp(cadena1, cadena2) si queremos que discrimine entre minúsculas y mayúsculas, o sino sticmp que no es sensible. 
+    devuelve 0 si cadena1 == cadena2
+    devuelve >0 si cadena1 > cadena2
+    devuelve <0 si cadena1 < cadena2
 
+- función strcpy(cadena1,cadena2): el contenido del segundo parámetro se copia en el primero (el primero tiene que ser siempre una variable).
