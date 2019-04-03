@@ -1,3 +1,6 @@
+los botones de la calculadora son los casos de un switch
+usar una variable bandera para chequear que se hayan calculado las operaciones antes de mostrar los resultados
+
 .h
 //prototipos de funciones
 
