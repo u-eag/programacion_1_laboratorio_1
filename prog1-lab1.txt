@@ -311,6 +311,10 @@ int main()
     return 0;
 }
  
+- Cadenas de caracteres: termina con el elemeno "\0" (ocupa el último espacio del array).
+char cadena[50];
+fflush(stdin);
+scanf("%s", cadena); // corta al ingresar un espacio
  
 
 
