@@ -335,3 +335,57 @@ scanf("%s", cadena); // corta al ingresar un espacio
     devuelve <0 si cadena1 < cadena2
 
 - función strcpy(cadena1,cadena2): el contenido del segundo parámetro se copia en el primero (el primero tiene que ser siempre una variable).
+
+ ***** Clase 7 - prog1 *****
+ 
+ - paralelismos
+ - doble criterio
+ 
+ ***** Clase 8 - lab1 *****
+  
+ - estructura: un tipo de dato definido por el usuario (no es int, char, etc.). 
+  Cada columna se llama campo. Hay que definir qué tipo de dato va a contener cada campo (int, char, etc.).
+  
+ - cómo crear una estructura: antes del main, con la palabra reservada "estruct":
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct datosPersonales {
+    char nombre[20];
+    char apellido[20];
+    char calle[20];
+    int numero;
+};
+
+int main()
+{
+    struct datosPersonales agenda;
+
+    strcpy(agenda.nombre, "Juan");
+    strcpy(agenda.apellido, "Perez");
+    strcpy(agenda.calle, "Mitre");
+    agenda.numero = 750;
+
+    printf("El nombre es %s", agenda.nombre);
+
+    return 0;
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
