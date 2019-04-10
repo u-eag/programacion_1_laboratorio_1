@@ -402,6 +402,37 @@ int main()
     printf("El codigo postal es: %d\n", agenda.codigoPostal);
   
 - Para agregarle filas a la estructura declaro adentro de main: struct datosPersonales vecAgenda[3];
+    struct datosPersonales vecAgenda[3];
+
+    for (int i=0; i<3; i++) {
+    printf("Ingrese el nombre: ");
+    fflush(stdin);
+    gets(vecAgenda[i].nombre);
+    fflush(stdin);
+
+    printf("Ingrese el apellido: ");
+    gets(vecAgenda[i].apellido);
+    fflush(stdin);
+
+    printf("Ingrese la calle: ");
+    gets(vecAgenda[i].calle);
+    fflush(stdin);
+
+    printf("Ingrese el numero: ");
+    scanf("%d", &vecAgenda[i].numero);
+
+    printf("Ingrese el codigo postal: ");
+    scanf("%d", &vecAgenda[i].codigoPostal);
+
+    }
+
+    for (int i=0; i<3; i++) {
+    printf("El nombre es: %s\n", vecAgenda[i].nombre);
+    printf("El apellido es: %s\n", vecAgenda[i].apellido);
+    printf("La cale es: %s\n", vecAgenda[i].calle);
+    printf("El numero es: %d\n", vecAgenda[i].numero);
+    printf("El codigo postal es: %d\n", vecAgenda[i].codigoPostal);
+    }
 
   
   
