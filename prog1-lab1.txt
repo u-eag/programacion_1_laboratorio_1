@@ -372,7 +372,27 @@ int main()
     return 0;
 }
 
+- pedir y mostrar los datos:
 
+    struct datosPersonales agenda;
+
+    printf("Ingrese el nombre: ");
+    gets(agenda.nombre);
+    printf("Ingrese el apellido: ");
+    gets(agenda.apellido);
+    printf("Ingrese la calle: ");
+    gets(agenda.calle);
+    printf("Ingrese el numero: ");
+    scanf("%d", &agenda.numero);
+    printf("Ingrese el codigo postal: ");
+    scanf("%d", &agenda.codigoPostal);
+
+
+    printf("El nombre es: %s\n", agenda.nombre);
+    printf("El apellido es: %s\n", agenda.apellido);
+    printf("La cale es: %s\n", agenda.calle);
+    printf("El numero es: %d\n", agenda.numero);
+    printf("El codigo postal es: %d\n", agenda.codigoPostal);
   
   
   
