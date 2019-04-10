@@ -377,16 +377,23 @@ int main()
     struct datosPersonales agenda;
 
     printf("Ingrese el nombre: ");
+    fflush(stdin);
     gets(agenda.nombre);
+    fflush(stdin);
+    
     printf("Ingrese el apellido: ");
     gets(agenda.apellido);
+    fflush(stdin);
+    
     printf("Ingrese la calle: ");
     gets(agenda.calle);
+    fflush(stdin);
+    
     printf("Ingrese el numero: ");
     scanf("%d", &agenda.numero);
+    
     printf("Ingrese el codigo postal: ");
     scanf("%d", &agenda.codigoPostal);
-
 
     printf("El nombre es: %s\n", agenda.nombre);
     printf("El apellido es: %s\n", agenda.apellido);
