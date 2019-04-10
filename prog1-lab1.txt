@@ -401,7 +401,8 @@ int main()
     printf("El numero es: %d\n", agenda.numero);
     printf("El codigo postal es: %d\n", agenda.codigoPostal);
   
-  
+- Para agregarle filas a la estructura declaro adentro de main: struct datosPersonales vecAgenda[3];
+
   
   
   
