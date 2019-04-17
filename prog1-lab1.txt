@@ -436,6 +436,32 @@ int main()
 
 ***** Clase 9 - prog1 *****
 
+- crear 3 funciones: 
+1) para inicializar el array (decir que está empty)
+2) para mostrar el array
+3) para mostrar un lugar libre
+opcional 4) para guardar los datos del alta
+
+#define CANT_EMP 100
+
+typedef struct
+{
+    int isEmpty;
+    int idEmpleado;
+    char nombre[50];
+    char apellido[50];
+}Empleado;
+
+int main()
+{
+    Empleado arrayEmpleados[CANT_EMP];
+    
+    // 1) funcion para inicializar el array de empleados:
+    for(i=0;i<CANT_EMP;i++)
+    {
+        arrayEmpleados[i].isEmpty=1;
+    }
+
 ***** Clase 10 - lab1 *****
 \t: tabula
 %s.5: muestra los primeros 5 caracteres de un string
