@@ -434,7 +434,14 @@ int main()
     printf("El codigo postal es: %d\n", vecAgenda[i].codigoPostal);
     }
 
-  
+***** Clase 9 - prog1 *****
+
+***** Clase 10 - lab1 *****
+\t: tabula
+%s.5: muestra los primeros 5 caracteres de un string
+%0: tabula un lugar a la izq.
+
+
   
   
   
