@@ -441,6 +441,39 @@ int main()
 %s.5: muestra los primeros 5 caracteres de un string
 %0: tabula un lugar a la izq.
 
+29/4: examen programación
+lunes 6 y miércoles 8 de mayo: examen laboratorio
+
+para buscar los empleados de un sector:
+for(i=0; i<CANT_SECT; i++){
+    printf("%d %s\n", sectores[i].id, sectores[i].descr);
+}
+
+printf("Ingrese sector a buscar: ");
+scanf("%d", &sectorAux);
+
+for(i=0; i<CANT_SECT; i++){
+    for(j=0; j<CANT_EMP; j++){
+        if(sectorAux==sectores[i].id && sectores[i].id==emp[j].idSector){
+            printf("%d %s %s", emp[j], emp[j].nombre, sectores[i].descr);
+        }
+    }
+}
+
+para ordenar los empleados alfabéticamente:
+aEmpleado auxEmp;
+
+for(i=0: i<CANT_EMP-1; i++){
+    for(j=0; j<CANT_EMP; j++){
+        if(strcmp(emp[i].nombre, emp[j].nombre)>0){ // da mayor a cero si el parametro de la izq es mas grande
+            auxEmp=emp[i];
+            emp[i]=emp[j];
+            emp[j]=auxEmp;
+            // como son datos de tipo estructura se copian todos al mismo tiempo (al hacer swap)
+        }
+    }
+}
+
 
   
   
