@@ -442,6 +442,8 @@ int main()
 3) para mostrar un lugar libre
 opcional 4) para guardar los datos del alta
 
+---tambien: si o si hacer funciones para alta, baja, modificacion y para ordenar
+
 #define CANT_EMP 100
 
 typedef struct
