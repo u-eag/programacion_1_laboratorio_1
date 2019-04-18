@@ -457,10 +457,35 @@ int main()
     Empleado arrayEmpleados[CANT_EMP];
     
     // 1) funcion para inicializar el array de empleados:
-    for(i=0;i<CANT_EMP;i++)
+    for(int i=0;i<CANT_EMP;i++)
     {
         arrayEmpleados[i].isEmpty=1;
     }
+
+    // 2) funcion para mostrar el array (los lugares ocupados):
+    for(int i=0;i<CANT_EMP;i++)
+    {
+        if(arrayEmpleados[i].isEmpty==0)
+        {
+            printf("%d %d %s %s", arrayEmpleados[i].isEmpty, arrayEmpleados[i].idEmpleado, arrayEmpleados[i].nombre, arrayEmpleados[i].apellido);
+        }
+    }
+
+    // 3) funcion para mostrar un lugar libre:
+    int indiceLibre;
+    for(int i=0;i<CANT_EMP;i++)
+    {
+        if(arrayEmpleados[i].isEmpty==1)
+        {
+            indiceLibre=i;
+            break;
+        }
+    }
+
+    // 4) funcion para guardar los datos
+    Empleado auxiliar;
+    //desde el main llamo a la funcion altaEmpleado para que: 1. busca un lugar libre, 2. pide los datos, 3. los valida, 4. los guarda en la variable definitiva
+
 
 ***** Clase 10 - lab1 *****
 \t: tabula
