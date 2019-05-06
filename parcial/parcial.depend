@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1557164673 source:d:\p1.lab1\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ABM_Biblioteca.h"
+	"input.h"
+
+1557165276 d:\p1.lab1\parcial\abm_biblioteca.h
+
+1557164640 source:d:\p1.lab1\parcial\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557164588 source:d:\p1.lab1\parcial\abm_biblioteca.c
+	"ABM_Biblioteca.h"
+	"input.h"
+
+1557163560 d:\p1.lab1\parcial\input.h
+
