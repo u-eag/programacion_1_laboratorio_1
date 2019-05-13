@@ -559,6 +559,88 @@ for(i=0: i<CANT_EMP-1; i++){
         printf("%d\n", *(vec+i));
     }
     
+#include <stdio.h>
+#include <stdlib.h>
+
+int mostrarVector1 (int vec[], int tam); // desarrollo con nomenclatura vectorial []
+int mostrarVector2 (int vec[], int tam); // desarrollo con nomenclatura puntero *
+int mostrarVector3 (int* vec, int tam); // desarrollo con nomenclatura vectorial []
+int mostrarVector4 (int* vec, int tam); // desarrollo con nomenclatura puntero *
+
+int main()
+{
+    int vec[] = {3, 5, 2, 4, 3};
+
+    mostrarVector1(vec, 5);
+    printf("\n");
+    mostrarVector2(vec, 5);
+    printf("\n");
+    mostrarVector3(vec, 5);
+    printf("\n");
+    mostrarVector4(vec, 5);
+
+    return 0;
+}
+
+int mostrarVector1 (int vec[], int tam) // desarrollo con nomenclatura vectorial []
+{
+    int result=-1;
+    int i;
+
+    for(i=0;i<tam;i++)
+    {
+        printf("%d ", vec[i]);
+        result=0;
+    }
+
+    return result;
+}
+
+int mostrarVector2 (int vec[], int tam) // desarrollo con nomenclatura puntero *
+{
+    int result=-1;
+    int i;
+
+    for(i=0;i<tam;i++)
+    {
+        printf("%d ", *(vec+i));
+        result=0;
+    }
+
+    return result;
+}
+
+int mostrarVector3 (int* vec, int tam) // desarrollo con nomenclatura vectorial []
+{
+    int result=-1;
+    int i;
+
+    for(i=0;i<tam;i++)
+    {
+        printf("%d ", vec[i]);
+        result=0;
+    }
+
+
+    return result;
+}
+
+int mostrarVector4 (int* vec, int tam) // desarrollo con nomenclatura puntero *
+{
+    int result=-1;
+    int i;
+
+    for(i=0;i<tam;i++)
+    {
+        printf("%d ", *(vec+i));
+        result=0;
+    }
+
+    return result;
+}
+    
+- Reglita de coherencia: si lo recibo como puntero lo trabajo como puntero, y si lo recibo como vector lo trabajo como vector.
+
 
  
 
