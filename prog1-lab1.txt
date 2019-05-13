@@ -641,6 +641,8 @@ int mostrarVector4 (int* vec, int tam) // desarrollo con nomenclatura puntero *
     
 - Reglita de coherencia: si lo recibo como puntero lo trabajo como puntero, y si lo recibo como vector lo trabajo como vector.
 
+- Existen 2 tipos de memoria: Heap y Stack
+
 
  
 
