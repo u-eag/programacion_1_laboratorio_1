@@ -546,8 +546,20 @@ for(i=0: i<CANT_EMP-1; i++){
     int** r = &p;
     printf("%d", **r); // imprime el 10
     
-
+- para recorrer un vector paso a paso:
+    int vec[] = {3, 5, 2, 4, 3};
+    printf("%d\n", *vec); // muestra el 3, que es vec[0]
+    printf("%d\n", *(vec+1)); // muestra el 5, que es vec[1]
+    printf("%d\n", *(vec+2)); // muestra el 2, que es vec[2]
     
+- para recorrer el mismo vector con aritmetica de punteros:
+    int i;
+    for(i=0;i<5;i++)
+    {
+        printf("%d\n", *(vec+i));
+    }
+    
+
  
 
   
