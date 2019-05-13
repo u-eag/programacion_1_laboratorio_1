@@ -644,8 +644,7 @@ int mostrarVector4 (int* vec, int tam) // desarrollo con nomenclatura puntero *
 - Existen 2 tipos de memoria: Heap y Stack
 - En programacion con punteros: viendo los parametros formales de una funcion no podemos saber si se trata de un vector o no
 (porque el tipo de dato es el mismo: una direccion de memoria)
-
- 
+- Puntero a un tipo de dato estructura: para acceder a un campo en lugar del punto "." se usa la flecha "->"
 
   
   
