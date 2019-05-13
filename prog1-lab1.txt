@@ -527,9 +527,29 @@ for(i=0: i<CANT_EMP-1; i++){
     }
 }
 
+***** Clase 13/5 - prog1 *****
+- Punteros: los usamos para trabajar con la memoria dinamica.
+- un achivo inicia en el primer lugar marcado por la direccion de memoria y termina con "eof" (end of file)
+- int* p; // para crear una variable de tipo puntero
+- las direcciones de las direcciones de memoria se definen en formato hexadecimal (para que sean mas cortas)
+- la mascara para mostrar un int* en formato hexadecimal es: %x
+- "&" es la direccion de memoria y "*" es la indireccion
+    int x = 10;
+    int* p;
+    p = &x;
+    printf("%d\n", x);
+    printf("%d", *p);
+- para declarar un puntero (r) que guarde la direccion de memoria de otro puntero (p): int** r = &p;
+- para leer r: **r
+    int x = 10;
+    int* p = &x;
+    int** r = &p;
+    printf("%d", **r); // imprime el 10
+    
 
-  
-  
+    
+ 
+
   
   
   
