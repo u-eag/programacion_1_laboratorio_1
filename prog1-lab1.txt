@@ -646,8 +646,28 @@ int mostrarVector4 (int* vec, int tam) // desarrollo con nomenclatura puntero *
 (porque el tipo de dato es el mismo: una direccion de memoria)
 - Puntero a un tipo de dato estructura: para acceder a un campo en lugar del punto "." se usa la flecha "->"
 
-  
-  
+***** Clase 16 (15/5) - lab1 *****  
+
+- Puntero a cadena:
+    char palabra[] = "hola";
+    char* punteroCadena = NULL;
+    int i=0;
+
+    punteroCadena = palabra;
+
+    while(*(punteroCadena+i) != '\0')
+    {
+        printf("%c %p\n", *(punteroCadena+i), &punteroCadena);
+        i++;
+    }
+
+    printf("\n");
+
+    while(*punteroCadena != '\0')
+    {
+        printf("%c %p\n", *punteroCadena, punteroCadena);
+        punteroCadena++;
+    }
   
   
   
