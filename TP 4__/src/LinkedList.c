@@ -198,7 +198,7 @@ int ll_add(LinkedList* this, void* pElement)
                             (pElement) Si funciono correctamente
  *
  */
-void* ll_get(LinkedList* this, int index)
+void* ll_get(LinkedList* this, int index) // get
 {
     void* returnAux = NULL;
 
@@ -215,7 +215,7 @@ void* ll_get(LinkedList* this, int index)
                         ( 0) Si funciono correctamente
  *
  */
-int ll_set(LinkedList* this, int index,void* pElement)
+int ll_set(LinkedList* this, int index,void* pElement) // get + cambiar elemento
 {
     int returnAux = -1;
 
@@ -231,7 +231,7 @@ int ll_set(LinkedList* this, int index,void* pElement)
                         ( 0) Si funciono correctamente
  *
  */
-int ll_remove(LinkedList* this,int index)
+int ll_remove(LinkedList* this,int index) // get
 {
     int returnAux = -1;
 
@@ -261,7 +261,7 @@ int ll_clear(LinkedList* this)
                         ( 0) Si funciono correctamente
  *
  */
-int ll_deleteLinkedList(LinkedList* this)
+int ll_deleteLinkedList(LinkedList* this) // clear + free
 {
     int returnAux = -1;
 
@@ -276,7 +276,7 @@ int ll_deleteLinkedList(LinkedList* this)
                         (indice del elemento) Si funciono correctamente
  *
  */
-int ll_indexOf(LinkedList* this, void* pElement)
+int ll_indexOf(LinkedList* this, void* pElement) // for + get + if
 {
     int returnAux = -1;
 
@@ -291,7 +291,7 @@ int ll_indexOf(LinkedList* this, void* pElement)
                         ( 1) Si la lista esta vacia
  *
  */
-int ll_isEmpty(LinkedList* this)
+int ll_isEmpty(LinkedList* this) // if size (si es 0 està empoty)
 {
     int returnAux = -1;
 
@@ -323,7 +323,7 @@ int ll_push(LinkedList* this, int index, void* pElement)
                             (pElement) Si funciono correctamente
  *
  */
-void* ll_pop(LinkedList* this,int index)
+void* ll_pop(LinkedList* this,int index) // lamar a get, quedarse con el pElement y dps llamar a remove
 {
     void* returnAux = NULL;
 
