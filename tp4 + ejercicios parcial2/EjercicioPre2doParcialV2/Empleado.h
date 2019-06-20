@@ -10,6 +10,6 @@ struct S_Empleado
 };
 typedef struct S_Empleado Empleado;
 
-void em_calcularSueldo(void* p);
+int em_calcularSueldo(void* p);
 
 #endif // EMPLEADO_H_INCLUDED
